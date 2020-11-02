@@ -1,0 +1,145 @@
+CREATE OR REPLACE TRIGGER  "BI_P_USER" 
+  before insert on "P_USER"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "P_USER_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_P_USER" ENABLE;
+
+
+
+CREATE OR REPLACE TRIGGER  "BI_PS_USER" 
+  before insert on "PS_USER"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "PS_USER_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_PS_USER" ENABLE;
+
+
+
+CREATE OR REPLACE TRIGGER  "BI_NOTIFICATION_HISTORY" 
+  before insert on "NOTIFICATION_HISTORY"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "NOTIFICATION_HISTORY_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_NOTIFICATION_HISTORY" ENABLE;
+
+
+
+
+CREATE OR REPLACE TRIGGER  "BI_NOTIFICATION" 
+  before insert on "NOTIFICATION"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "NOTIFICATION_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_NOTIFICATION" ENABLE;
+
+
+
+
+CREATE OR REPLACE TRIGGER  "BI_DOCUMENT" 
+  before insert on "DOCUMENT"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "DOCUMENT_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_DOCUMENT" ENABLE;
+
+
+
+
+CREATE OR REPLACE TRIGGER  "BI_CRIMINAL_DOCUMENT" 
+  before insert on "CRIMINAL_DOCUMENT"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "CRIMINAL_DOCUMENT_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_CRIMINAL_DOCUMENT" ENABLE;
+
+
+
+
+
+CREATE OR REPLACE TRIGGER  "BI_CRIMINALCASE" 
+  before insert on "CRIMINALCASE"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "CRIMINALCASE_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_CRIMINALCASE" ENABLE;
+
+
+
+
+CREATE OR REPLACE TRIGGER  "BI_CRIMINAL" 
+  before insert on "CRIMINAL"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "CRIMINAL_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_CRIMINAL" ENABLE;
+
+
+
+
+CREATE OR REPLACE TRIGGER  "BI_COMMENTS" 
+  before insert on "COMMENTS"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "COMMENTS_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_COMMENTS" ENABLE;
+
+
+
+
+CREATE OR REPLACE TRIGGER  "BI_CASE" 
+  before insert on "CASE"               
+  for each row  
+begin   
+  if :NEW."ID" is null then 
+    select "CASE_SEQ".nextval into :NEW."ID" from dual; 
+  end if; 
+end; 
+
+/
+ALTER TRIGGER  "BI_CASE" ENABLE;

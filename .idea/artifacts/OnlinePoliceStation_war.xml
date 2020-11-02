@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="OnlinePoliceStation:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>OnlinePoliceStation</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="OnlinePoliceStation-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="OnlinePoliceStation:war exploded" />
+    </root>
+  </artifact>
+</component>

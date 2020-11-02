@@ -1,0 +1,10 @@
+Create sequence "CASE_SEQ";
+Create sequence "COMMENTS_SEQ";
+Create sequence "CRIMINAL_SEQ";
+Create sequence "CRIMINALCASE_SEQ";
+Create sequence "CRIMINAL_DOCUMENT_SEQ";
+Create sequence "NOTIFICATION_SEQ";
+Create sequence "NOTIFICATION_HISTORY_SEQ";
+Create sequence "PS_USER_SEQ";
+Create sequence "P_USER_SEQ";
+Create sequence "DOCUMENT_SEQ";

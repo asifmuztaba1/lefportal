@@ -1,0 +1,8 @@
+
+.mainview{padding: 30px auto;border-left: 1px solid black;padding-top: 30px;}
+.mainview input{width: 350px;}
+.mainmenu ul li:hover{background-color:#449D44;}
+.mainmenu ul li a{padding:1px;display:block;}
+.mainmenu ul li{width:130px;text-align:center;}
+.table input{width: 80px;height: 25px}
+.footer{margin-top: 100px;}
